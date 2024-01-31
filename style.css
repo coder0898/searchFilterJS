@@ -46,7 +46,7 @@ li {
 /* Heading Styling 
 --------------------------------------------------------*/
 
-.heading{
+.heading {
     width: 100%;
     background-color: #432c7a;
     border-top-right-radius: 1rem;
@@ -55,19 +55,19 @@ li {
     color: #fff;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.heading h3{
+.heading h3 {
     margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.heading input{
+.heading input {
     width: 16rem;
     height: 2.5rem;
     font-size: 1.2rem;
@@ -75,3 +75,55 @@ li {
     border: 0;
     outline: 0;
 }
+
+/* Loading Styling 
+--------------------------------------------------------*/
+.center-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+.center-tag p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #432c7a;
+}
+
+/* User Data Styling 
+-----------------------------------------------------------*/
+.card-container{
+    padding: 2rem;
+    height: 20rem;
+    overflow-y: auto;
+  }
+  
+  .user-data{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+  }
+  
+  .user-data img{
+    max-width: 100%;
+    height: auto;
+    width: 6rem;
+    border-radius: 50%;
+  }
+  
+  .user-data div{
+    text-align: start;
+  }
+  
+  .user-data p{
+    text-transform: capitalize;
+  }
+  
+  .hide{
+    display: none;
+  }
