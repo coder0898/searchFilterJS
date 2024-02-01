@@ -6,3 +6,5 @@ Aim to build a Live search filter using JavaScript with API for data.
 
 
 ### API : https://api.github.com/users
+
+### Demo : https://coder0898.github.io/searchFilterJS/
