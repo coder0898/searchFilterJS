@@ -36,10 +36,11 @@ li {
 --------------------------------------------------------*/
 
 .container {
-    width: 30rem;
+    width: 35rem;
     box-shadow: 1rem 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
     border-radius: 2rem;
-    background-color: #ffffff;
+    margin: 3rem 0;
+    background-color: #fff;
 }
 
 
@@ -47,7 +48,6 @@ li {
 --------------------------------------------------------*/
 
 .heading {
-    width: 100%;
     background-color: #432c7a;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -56,36 +56,41 @@ li {
 }
 
 .heading h1 {
-    font-size: 2rem;
     font-weight: bold;
+    font-size: 1.8rem;
 }
 
 .heading h3 {
-    margin-top: 5px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-weight: lighter;
+  margin: 0.4rem 0 1.6rem 0;
 }
 
 .heading input {
-    width: 16rem;
-    height: 2.5rem;
-    font-size: 1.2rem;
-    padding-left: 10px;
-    border: 0;
-    outline: 0;
+    width: 50%;
+    border: none;
+    padding: .8rem .5rem;
+    font-family: "poppins";
+   outline: none;
+   border-radius: .5rem;
 }
+
+::placeholder{
+    font-family: "poppins";
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
 
 /* Loading Styling 
 --------------------------------------------------------*/
-.center-tag {
+.user-list {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 15rem;
 }
 
-.center-tag li {
+.user-list li {
     font-size: 1.6rem;
     font-weight: 500;
     color: #432c7a;
@@ -93,10 +98,16 @@ li {
 
 /* User Data Styling 
 -----------------------------------------------------------*/
-.card-container{
+.card-container {
     padding: 2rem;
-    height: 20rem;
+    height: 40rem;
     overflow-y: auto;
+  }
+  
+  .user-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .user-data{
@@ -112,7 +123,7 @@ li {
   .user-data img{
     max-width: 100%;
     height: auto;
-    width: 6rem;
+    width: 5rem;
     border-radius: 50%;
   }
   
@@ -122,6 +133,10 @@ li {
   
   .user-data p{
     text-transform: capitalize;
+  }
+
+  .user-data a{
+    font-size: 1.3rem;
   }
   
   .hide{
