@@ -1,6 +1,8 @@
 const searchDeveloper = document.getElementById('searchDeveloper');
 const userList = document.querySelector('.user-list');
 
+let userData = [];
+
 // geting data from api
 
 const getDveloperData = async () => {
@@ -10,10 +12,16 @@ const getDveloperData = async () => {
 
         const developerData = await res.json();
 
-        console.log(developerData);
+        // console.log(developerData);
+        if (developerData) {
+            userList.innerHTML = ''; 
+        }
+
 
         developerData.map((data) => {
             const Li = document.createElement('li');
+
+            userData.push(Li);
 
             Li.insertAdjacentHTML('afterbegin',
                 `
@@ -35,3 +43,16 @@ const getDveloperData = async () => {
 }
 
 getDveloperData();
+
+// search event
+searchDeveloper.addEventListener('input',(e)=>{
+    const inputValue = e.target.value;
+
+    // console.log(inputValue);
+ 
+    userData.filter((data)=>{
+        data.innerText.toLowerCase().includes(inputValue.toLowerCase()) ?
+        data.classList.remove('hide') :
+        data.classList.add('hide')
+    })
+})
